@@ -6,9 +6,13 @@
     text-decoration: none;
     font-family: sans-serif;
 }
-body{
+.body{
     background-image: url(../images/shutterstock_2189773743\ 1.png);
     background-size: 100%;
+}
+body{
+    background-color: #e7e7e7;
+    width: 100%;
 }
 .redberry_logo{
     background-image: url(../images/LOGO-02\ 3.png);
@@ -46,4 +50,57 @@ body{
     transform: translate(-50%,-50%);
     padding: 16px 100px;
     border-radius: 8px;
+}
+
+/* ------------------------------------------
+--------------piradi.html--------------------
+--------------------------------------------- */
+.piradi_main{
+    
+}
+.fa-chevron-left-a{
+    margin:57px 0 0 62px ;
+    padding:10px;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 100%;
+}
+.piradi_div_1{
+    
+    /* position: relative; */
+}
+.piradi_div_2{
+    
+    background-color: #e7e7e7;
+    width:70%;
+    height: 100%;
+}
+.piradi_piradiInfo{
+    position: absolute;
+    color: #1A1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    top:57px;
+    left:150px;
+    /* display: flex; */
+}
+.pages1_3{
+    position: absolute;
+    top:68px;
+    left: 784px;
+}
+.piradi_line{
+    width: auto;
+    border: #000000 solid 1px;
+    margin: 12px 150px 0;
+}
+
+.piradi_div_3{
+    position: absolute;
+    background-color: #ffffff;
+    width:30%;
+    height: 100%;
+    /* border: #ffffff solid 1px; */
+    right:0;
+    top: 0;
 }
