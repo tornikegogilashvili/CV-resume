@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
     <script defer src="https://kit.fontawesome.com/e8c0f84797.js" crossorigin="anonymous"></script>
+    <script defer src="js/update.js"></script>
     <title>Redberry</title>
 </head>
 <body>
@@ -30,11 +31,39 @@
             </div>
             
         </div>
-        <div class="piradi_div_3"></div>
-        <div class="t"></div>
-        <div class="o">
-            <div class="r"></div>
+        <div class="piradi_div_3">
+            <p class="CV_name CV" id="CV_name"></p>
+            <p class="CV_lastname CV" id="CV_lastname"></p>
+            <div class="piradi_div_img" id="piradi_div_img"></div>
+            <p class="CV_email" id="CV_email"></p>
+            <p class="CV_tel" id="CV_tel"></p>
+            <p class="CV_about" id="CV_about"></p>
+            <p class="CV_text" id="CV_text"></p>
+        </div>  
         </div>
+        <form class="piradi_form" action="#" autocomplete="on">
+            <label for="firstname" class="label_firstname">სახელი</label>
+            <input type="text" name="firstname" class="firstname" id="firstname" placeholder="სახელი" required >
+            <p class="firstname_p">მინიმუმ 2 ასო, ქართული ასოები</p>
+            <label for="lastname" class="label_lastname">გვარი</label>
+            <input type="text" name="lastname" class="lastname" id="lastname" placeholder="გვარი" required>
+            <p class="lastname_p">მინიმუმ 2 ასო, ქართული ასოები</p>
+            <label for="img" class="label_file">პირადი ფოტოს ატვირთვა</label>
+            <button class="file_button" onclick="document.getElementById('img').click()" >ატვირთვა</button>
+            <input type="file" name="file" class="img" id="img" style="display: none;" required>
+            <label class="label_textarea" for="textarea">ჩემ შესახებ (არასავალდებულო)</label>
+            <textarea name="textarea" id="textarea" class="textarea" placeholder="ზოგადი ინფო შენ შესახებ"></textarea>
+            <label for="email" class="label_email">ელ ფოსტა</label>
+            <input type="email" class="email" id="email" placeholder="ელექტრონული ფოსტა" required>
+            <p class="email_p">უნდა მთავრდებოდეს @redberry.ge-ით</p>
+            <label for="tel" class="label_number">მობილურის ნომერი</label>
+            <input type="tel" class="number" id="tel" required>
+            <p class="number_p">უნდა აკმაყოფილებდეს ქართული მობილური ნომრის ფორმატს</p>
+        </form>
+        <div class="piradi_div_next">
+           <p class="piradi_next next">შემდეგი</p> 
+        </div>
+        
     </main>
     <footer></footer>
 </body>
