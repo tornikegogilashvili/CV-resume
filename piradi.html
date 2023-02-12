@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
     <script defer src="https://kit.fontawesome.com/e8c0f84797.js" crossorigin="anonymous"></script>
+    <script defer src="js/validation.js"></script>
     <script defer src="js/update.js"></script>
     <title>Redberry</title>
 </head>
@@ -53,12 +54,17 @@
             <input type="file" name="file" class="img" id="img" style="display: none;" required>
             <label class="label_textarea" for="textarea">ჩემ შესახებ (არასავალდებულო)</label>
             <textarea name="textarea" id="textarea" class="textarea" placeholder="ზოგადი ინფო შენ შესახებ"></textarea>
-            <label for="email" class="label_email">ელ ფოსტა</label>
-            <input type="email" class="email" id="email" placeholder="ელექტრონული ფოსტა" required>
+            <label id="label_email" for="email" class="label_email">ელ ფოსტა</label>
+            <input  type="text" class="email" id="email" placeholder="ელექტრონული ფოსტა"  required>
+            <p class="fa-circle-check-p"><i class="fa-solid fa-circle-check"></i></p>
+            <p class="fa-circle-xmark-p"><i class="fa-solid fa-circle-xmark"></i></p>
             <p class="email_p">უნდა მთავრდებოდეს @redberry.ge-ით</p>
             <label for="tel" class="label_number">მობილურის ნომერი</label>
-            <input type="tel" class="number" id="tel" required>
+            <input type="tel" class="number" id="tel" placeholder="+995595343834" required>
+            <p class="fa-circle-check-tel-p"><i class="fa-solid fa-circle-check tel_c"></i></p>
+            <p class="fa-circle-xmark-tel-p"><i class="fa-solid fa-circle-xmark tel_x"></i></p>
             <p class="number_p">უნდა აკმაყოფილებდეს ქართული მობილური ნომრის ფორმატს</p>
+            
         </form>
         <div class="piradi_div_next">
            <p class="piradi_next next">შემდეგი</p> 
