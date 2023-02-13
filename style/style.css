@@ -269,7 +269,7 @@ body{
     position: relative;
     width: 60%;
 }
-/* .next{
+.next{
     position: absolute;
     background-color: #6B40E3;
     color: #ffffff;
@@ -277,9 +277,9 @@ body{
     border-radius: 4px;
     top:880px;
     right:150px;
-    
+    border: none;
     cursor: pointer;
-} */
+}
 .piradi_next_a{
     position: absolute;
     background-color: #6B40E3;
@@ -341,21 +341,16 @@ body{
     bottom: 44px;
     left: 20px;
 }
-.invalid{
-    border-color: #F02424;
-}
-.valid{
-    border-color:#98E37E;
-}
 
-.fa-circle-check{
+
+.em_c{
     position:absolute;
     top:520px;
     right:155px;
     color: #98E37E;
     
 }
-.fa-circle-xmark{
+.em_x{
     position:absolute;
     top:520px;
     right:155px;
@@ -393,18 +388,18 @@ body{
 --------------------------------
 -------------------------------- */
 
-.label_gamocdileba{
+.label_tanamdeboba{
     position: absolute;
-    top: 70px;
+    top: 77px;
     left: 150px;
     font-size: 18px;
     font-weight: 500;
 }
-.email1{
+.tanamdeboba{
     position: absolute;
     left: 150px;
     right: 150px;
-    top: 507px;
+    top: 106px;
     width: auto;
     height: 44px;
     outline: none;
@@ -413,4 +408,166 @@ body{
     border: #BCBCBC solid 1px;
     padding-left: 10px;
     border-radius: 4px;
+}
+.aso_2{
+    position: absolute;
+    top:162px;
+}
+.label_damsaqmebeli{
+    position: absolute;
+    top: 214px;
+    left: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.damsaqmebeli{
+    position: absolute;
+    left: 150px;
+    right: 150px;
+    top: 243px;
+    width: auto;
+    height: 44px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    border: #BCBCBC solid 1px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.aso_2_damsaqmebeli{
+    position: absolute;
+    top:299px;
+}
+.label_date_1{
+    position: absolute;
+    width: 250px;
+    top: 351px;
+    left: 150px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.date_1{
+    position: absolute;
+    top:380px;
+    left: 150px;
+    width: 250px;
+    height: 44px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    border: #BCBCBC solid 1px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+.label_date_2{
+    position: absolute;
+    width: 250px;
+    top: 351px;
+    right: 150px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.date_2{
+    position: absolute;
+    right: 150px;
+    top: 380px;
+    width: 250px;
+    height: 44px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    border: #BCBCBC solid 1px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+.lastname_p{
+    position: absolute;
+    font-size: 14px;
+    color: #2E2E2E;
+    top: 160px;
+    right: 150px;
+    width: 250px;
+}
+.label_agwera{
+    position: absolute;
+    left: 150px;
+    top:461px;
+}
+.agwera{
+    position: absolute;
+    left: 150px;
+    right: 150px;
+    top:490px;
+    width: auto;
+    height: 100px;
+    padding:10px 0 0 10px;
+    resize:none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    border-radius: 4px;
+    border: #BCBCBC solid 1px;
+}
+.gamocdileba_next{
+    position: absolute;
+    background-color: #6B40E3;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    top:880px;
+    right:150px;
+    cursor: pointer;
+}
+.gamocdileba_prev_a{
+    position: absolute;
+    background-color: #6B40E3;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    top:880px;
+    left:150px;
+    cursor: pointer;
+}
+.invalid{
+    border-color: #F02424;
+}
+.valid{
+    border-color:#98E37E;
+}
+.tan_c{
+    color: #98E37E;
+    position: absolute;
+    right: 160px;
+    top:121px;
+}
+.tan_x{
+    color: #F02424;
+    position: absolute;
+    right: 160px;
+    top:121px;
+}
+.dam_c{
+    color: #98E37E;
+    position: absolute;
+    right: 160px;
+    top:255px;
+}
+.dam_x{
+    color: #F02424;
+    position: absolute;
+    right: 160px;
+    top:255px;
+}
+.tan_c_p{
+    display: none;
+}
+.tan_x_p{
+    display: none;
+}
+.dam_c_p{
+    display: none;
+}
+.dam_x_p{
+    display: none;
 }

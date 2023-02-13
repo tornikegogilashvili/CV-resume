@@ -71,3 +71,5 @@ lastnameValidation.addEventListener("input", (nam)=>{
         lastnameValidation.classList.add("invalid")
     }
 });
+
+

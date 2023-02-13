@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
     <script defer src="https://kit.fontawesome.com/e8c0f84797.js" crossorigin="anonymous"></script>
+    <script defer src="js/validation2.js"></script>
+    <!-- <script defer src="js/update.js"></script> -->
     <title>Redberry</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
         <p><a class="fa-chevron-left-a" href="piradi.html"><i class="fa-solid fa-chevron-left"></i></a></p>
         <div class="piradi_div_2">
             <h2 class="piradi_piradiInfo">გამოცდილება</h2>
-            <p class="pages1_3">1&#47;3</p>
+            <p class="pages1_3">2&#47;3</p>
             <div class="piradi_line"></div>
         </div>
         
@@ -38,26 +40,37 @@
         <p class="CV_text" id="CV_text"></p>
         <div class="redstar_div"><img src="images/LOGO-12 1.png" alt="red star"></div>
     </div>
-    <form class="piradi_form" action="#" autocomplete="on">
-        <label id="label_email" for="email" class="label_gamocdileba">ელb ფოსტა</label>
-        <input  type="text" class="email1" id="email" placeholder="ელექტრონული ფოსტა"  required>
-        <label for="img" class="label_file">პირადი ფოტოს ატვირთვა</label>
-        <button class="file_button" onclick="document.getElementById('img').click()" >ატვირთვა</button>
-        <input type="file" name="file" class="img" id="img" style="display: none;" required>
-        <label class="label_textarea" for="textarea">ჩემ შესახებ (არასავალდებულო)</label>
-        <textarea name="textarea" id="textarea" class="textarea" placeholder="ზოგადი ინფო შენ შესახებ"></textarea>
-        <label id="label_email" for="email" class="label_email">ელ ფოსტა</label>
-        <input  type="text" class="email" id="email" placeholder="ელექტრონული ფოსტა"  required>
-        <p class="fa-circle-check-p"><i class="fa-solid fa-circle-check"></i></p>
-        <p class="fa-circle-xmark-p"><i class="fa-solid fa-circle-xmark"></i></p>
-        <p class="email_p">უნდა მთავრდებოდეს @redberry.ge-ით</p>
-        <label for="tel" class="label_number">მობილურის ნომერი</label>
-        <input type="tel" class="number" id="tel" placeholder="+995595343834" required>
-        <p class="fa-circle-check-tel-p"><i class="fa-solid fa-circle-check tel_c"></i></p>
-        <p class="fa-circle-xmark-tel-p"><i class="fa-solid fa-circle-xmark tel_x"></i></p>
-        <p class="number_p">უნდა აკმაყოფილებდეს ქართული მობილური ნომრის ფორმატს</p>
+    <form class="piradi_form" action="#" method="post" autocomplete="on">
+        <label id="label_tanamdeboba" for="tanamdeboba" class="label_tanamdeboba">თანამდებობა</label>
+        <input  type="text" class="tanamdeboba" id="tanamdeboba" placeholder="ელექტრონული ფოსტა"  required>
+        <p class="tan_c_p"><i class="fa-solid fa-circle-check tan_c"></i></p>
+        <p class="tan_x_p"><i class="fa-solid fa-circle-xmark tan_x"></i></p>
+        <p class="firstname_p aso_2">მინიმუმ 2 ასო, ქართული ასოები</p>
+
+        <label id="label_damsaqmebeli" for="damsaqmebeli" class="label_damsaqmebeli">დამსაქმებელი</label>
+        <input  type="text" class="damsaqmebeli" id="damsaqmebeli" placeholder="ელექტრონული ფოსტა"  required>
+        <p class="dam_c_p"><i class="fa-solid fa-circle-check dam_c"></i></p>
+        <p class="dam_x_p"><i class="fa-solid fa-circle-xmark dam_x"></i></p>
+        <p class="firstname_p aso_2_damsaqmebeli">მინიმუმ 2 ასო, ქართული ასოები</p>
+
+        <label for="date_1" class="label_date_1">დაწყების რიცხვი</label>
+        <input type="date" name="date" class="date_1" id="date_1" placeholder="dd.mm.yyyy" required >
         
-    </form>
+        <label for="date_2" class="label_date_2">დამთავრების რიცხვი</label>
+        <input type="date" name="date" class="date_2" id="date_2" placeholder="dd.mm.yyyy" required>
+        
+    
+        <label class="label_agwera" for="agwera">აღწერა</label>
+        <textarea  id="agwera" class="agwera" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
+        
+        
+        
+    
+    
+        <input type="submit" value="შემდეგი" class="gamocdileba_next next"></input> 
+        <p type="submit" value="წინა" class="gamocdileba_prev prev"><a class="gamocdileba_prev_a" href="piradi.html">წინა </a></p> 
+     
+     </form>
 </main>
 
 <footer></footer>
