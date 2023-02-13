@@ -1,15 +1,15 @@
+
+
+
+
+
+
+
+// -------მეილი------
 let redberryEmail = document.getElementById("email");
 let regX = /^[a-zA-Z0-9_]+@redberry.ge$/;
-
 let check_email = document.querySelector(".fa-circle-check-p");
 let xmark_email = document.querySelector(".fa-circle-xmark-p");
-
-let telephoneValidation = document.getElementById("tel");
-let telRegX = /^(\+?995)?(79\d{7}|5\d{8})$/;
-
-let check_tel = document.querySelector(".fa-circle-check-tel-p");
-let xmark_tel = document.querySelector(".fa-circle-xmark-tel-p");
-// -------მეილი------
 redberryEmail.addEventListener("input", (q)=>{
     console.log(q.target.value);
     if(q.target.value.match(regX)){
@@ -26,6 +26,11 @@ redberryEmail.addEventListener("input", (q)=>{
 
 });
 // -------ტელეფონი-------
+let telephoneValidation = document.getElementById("tel");
+let telRegX = /^(\+?995)?(79\d{7}|5\d{8})$/;
+
+let check_tel = document.querySelector(".fa-circle-check-tel-p");
+let xmark_tel = document.querySelector(".fa-circle-xmark-tel-p");
 telephoneValidation.addEventListener("input", (teleph)=>{
     console.log(teleph.target.value);
     if(teleph.target.value.match(telRegX)){
@@ -40,4 +45,29 @@ telephoneValidation.addEventListener("input", (teleph)=>{
                 xmark_tel.style.display="block";
             }
 
+});
+// -------ქართული ასოები სახელზე-----
+let geoShrift = /^[ა-ჰ]+$/;
+let firstnameValidation = document.getElementById("firstname");
+firstnameValidation.addEventListener("input", (nam)=>{
+    if(nam.target.value.length>=2&&nam.target.value.match(geoShrift)){
+        firstnameValidation.classList.add("valid")
+        firstnameValidation.classList.remove("invalid")
+    }else{
+        firstnameValidation.classList.remove("valid")
+        firstnameValidation.classList.add("invalid")
+    }
+});
+
+// -------ქართული ასოები გვარზე-----
+
+let lastnameValidation = document.getElementById("lastname");
+lastnameValidation.addEventListener("input", (nam)=>{
+    if(nam.target.value.length>=2&&nam.target.value.match(geoShrift)){
+        lastnameValidation.classList.add("valid")
+        lastnameValidation.classList.remove("invalid")
+    }else{
+        lastnameValidation.classList.remove("valid")
+        lastnameValidation.classList.add("invalid")
+    }
 });
