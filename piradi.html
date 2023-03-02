@@ -15,6 +15,7 @@
     <script defer src="https://kit.fontawesome.com/e8c0f84797.js" crossorigin="anonymous"></script>
     <script defer src="js/validation.js"></script>
     <script defer src="js/update.js"></script>
+    <script defer src="js/saveinfo.js"></script>
     <title>Redberry</title>
 </head>
 <body>
@@ -44,23 +45,23 @@
         </div>
         <form class="piradi_form" action="gamocdileba.html" method="get" autocomplete="on">
             <label for="firstname" class="label_firstname">სახელი</label>
-            <input type="text" name="firstname" class="firstname" id="firstname" placeholder="სახელი" required >
+            <input type="text" name="firstname" class="firstname" id="firstname" placeholder="სახელი"  >
             <p class="firstname_p">მინიმუმ 2 ასო, ქართული ასოები</p>
             <label for="lastname" class="label_lastname">გვარი</label>
-            <input type="text" name="lastname" class="lastname" id="lastname" placeholder="გვარი" required>
+            <input type="text" name="lastname" class="lastname" id="lastname" placeholder="გვარი" >
             <p class="lastname_p">მინიმუმ 2 ასო, ქართული ასოები</p>
             <label for="img" class="label_file">პირადი ფოტოს ატვირთვა</label>
-            <button class="file_button" onclick="document.getElementById('img').click()" >ატვირთვა</button>
-            <input type="file" name="file" class="img" id="img" style="display: none;" required>
+            <!-- <button class="file_button" onclick="document.getElementById('img').click()" >ატვირთვა</button> -->
+            <input type="file" name="photo" class="img" id="img"  >
             <label class="label_textarea" for="textarea">ჩემ შესახებ (არასავალდებულო)</label>
             <textarea name="textarea" id="textarea" class="textarea" placeholder="ზოგადი ინფო შენ შესახებ"></textarea>
             <label id="label_email" for="email" class="label_email">ელ ფოსტა</label>
-            <input  type="text" class="email" id="email" placeholder="ელექტრონული ფოსტა"  required>
+            <input  type="text" class="email" name="email" id="email" placeholder="ელექტრონული ფოსტა"  >
             <p class="fa-circle-check-p"><i class="fa-solid fa-circle-check em_c"></i></p>
             <p class="fa-circle-xmark-p"><i class="fa-solid fa-circle-xmark em_x"></i></p>
             <p class="email_p">უნდა მთავრდებოდეს @redberry.ge-ით</p>
             <label for="tel" class="label_number">მობილურის ნომერი</label>
-            <input type="tel" class="number" id="tel" placeholder="+995595343834" required>
+            <input type="tel" class="number" name="mobile" id="tel" placeholder="+995595343834" >
             <p class="fa-circle-check-tel-p"><i class="fa-solid fa-circle-check tel_c"></i></p>
             <p class="fa-circle-xmark-tel-p"><i class="fa-solid fa-circle-xmark tel_x"></i></p>
             <p class="number_p">უნდა აკმაყოფილებდეს ქართული მობილური ნომრის ფორმატს</p>
@@ -70,6 +71,20 @@
            <input type="submit" value="შემდეგი" class="piradi_next next"></input> 
         
         </form>
+        <script>
+            
+            const formForLocal1 = document.querySelector(".piradi_form");
+            formForLocal1.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            const nf = new FormData(formForLocal1);
+            const obj=Object.fromEntries(nf);
+            const json = JSON.stringify(obj);
+            localStorage.setItem("piradi_form", json);
+            console.log(json);
+            window.location.href = "gamocdileba.html";
+            
+        });
+        </script>
     </main>
     <footer></footer>
 </body>
