@@ -17,6 +17,14 @@ tanamdeboba.addEventListener("input", (tana)=>{
         tan_c_p.style.display="none";
     }
 });
+// ---------თანამდებობის აფდეითი-------
+
+let tanamdeboba_update = document.getElementById("tanamdeboba_update");
+tanamdeboba.addEventListener("input", (qw)=>{
+    console.log(qw.target.value);
+    tanamdeboba_update.innerHTML=""+qw.target.value;
+
+});
 
 // ---------დამსაქმებელი მინ 2 ასო----
 let damsaqmebeli = document.getElementById("damsaqmebeli");
