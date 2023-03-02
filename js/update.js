@@ -6,11 +6,7 @@
         CV_name.innerHTML=""+e.target.value;
 
     });
-    tanamdeboba.addEventListener("input", (e)=>{
-        console.log(e.target.value);
-        tanamdeboba_update.innerHTML=""+e.target.value;
-
-    });
+    
     // -----გვარის აფდეით----
     let lastname = document.getElementById("lastname");
     let CV_lastname = document.getElementById("CV_lastname");

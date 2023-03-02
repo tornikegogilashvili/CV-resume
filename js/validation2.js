@@ -44,6 +44,14 @@ damsaqmebeli.addEventListener("input", (dam)=>{
         dam_c_p.style.display="none"
     }
 });
+// -----დამსაქმებლის აფდეით----
+
+let damsaqmebeli_update = document.getElementById("damsaqmebeli_update");
+damsaqmebeli.addEventListener("input", (qm)=>{
+    console.log(qm.target.value);
+    damsaqmebeli_update.innerHTML=""+qm.target.value;
+
+});
 // ---------სამს დაწყება ----
 let date_1 = document.getElementById("date_1");
 
@@ -56,6 +64,14 @@ date_1.addEventListener("input", (d1)=>{
         date_1.classList.remove("valid")
         date_1.classList.add("invalid")
     }
+});
+// -----სამსახურის დაწყების აფდეით----
+
+let date_1_update = document.getElementById("date_1_update");
+date_1.addEventListener("input", (da)=>{
+    console.log(da.target.value);
+    date_1_update.innerHTML=da.target.value;
+
 });
 // ---------სამს დამთავრება ----
 let date_2 = document.getElementById("date_2");
@@ -70,6 +86,15 @@ date_2.addEventListener("input", (d2)=>{
         date_2.classList.add("invalid")
     }
 });
+// -----სამსახურის დამთავრები აფდეით----
+
+let date_2_update = document.getElementById("date_2_update");
+date_2.addEventListener("input", (te)=>{
+    console.log(te.target.value);
+    date_2_update.innerHTML=te.target.value;
+
+});
+// -------აღწერა-----
 let agwera = document.getElementById("agwera");
 
 agwera.addEventListener("input", (agw)=>{
@@ -81,4 +106,12 @@ agwera.addEventListener("input", (agw)=>{
         agwera.classList.remove("valid")
         agwera.classList.add("invalid")
     }
+});
+// -----აღწერა აფდეით----
+
+let agwera_update = document.getElementById("agwera_update");
+agwera.addEventListener("input", (upd)=>{
+    console.log(upd.target.value);
+    agwera_update.innerHTML=upd.target.value;
+
 });
