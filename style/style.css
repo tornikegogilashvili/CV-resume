@@ -104,8 +104,23 @@ body{
     right:0;
     top: 0;
 }
+.piradi_div_4{
+    position: fixed;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+    width:40%;
+    height: 100%;
+    /* border: #ffffff solid 1px; */
+    right:0;
+    top: 0;
+}
 /* -----------form------- */
 .piradi_form{
+    position: relative;
+    /* background-color: #1A1A1A; */
+    width: 60%;
+}
+.piradi_form1{
     position: relative;
     /* background-color: #1A1A1A; */
     width: 60%;
@@ -573,46 +588,89 @@ body{
 }
 
 .tanamdeboba_update{
-    position: absolute;
-    font-size: 24px;
-    color: #2E2E2E;
+    color:#2E2E2E;
+    font-size: 16px;
+    position:absolute;
     top: 300px;
     left: 10px;
+    font-weight: bold;
 }
-.damsaqmebeli_update{
+/* .damsaqmebeli_update{
     position: absolute;
-    font-size: 24px;
+    font-size: 16px;
+    color: #2E2E2E;
+    top: 340px;
+    left: 10px;
+} */
+.date_1_update{
+    position: absolute;
+    font-size: 16px;
     color: #2E2E2E;
     top: 340px;
     left: 10px;
 }
-.date_1_update{
+.agwera_line{
     position: absolute;
-    font-size: 24px;
-    color: #2E2E2E;
+    font-size: 16px;
+    color: #F02424;
     top: 380px;
     left: 10px;
-}
-.date_2_update{
-    position: absolute;
-    font-size: 24px;
-    color: #2E2E2E;
-    top: 420px;
-    left: 10px;
+    font-weight: bold;
 }
 .agwera_update{
     position: absolute;
-    font-size: 24px;
+    font-size: 16px;
     color: #2E2E2E;
-    top: 470px;
+    top: 400px;
     left: 10px;
 }
-.piradi_div_4{
+.piradi_div_5{
     position: fixed;
-    background-color: rgba(255, 255, 255, 0);
-    width:40%;
+    background-color: #dbdbdb;
+    width:50%;
     height: 100%;
     /* border: #ffffff solid 1px; */
-    right:0;
-    top: 0;
+    
 }
+.CV_lastname_update{
+    color:#F93B1D;
+    font-size: 24px;
+    position:absolute;
+    top: 28px;
+    left: 10px;
+    font-weight: bold;
+}
+.CV_email_update{
+    color:#2E2E2E;
+    font-size: 16px;
+    position:absolute;
+    top: 68px;
+    left: 10px;
+    font-weight: bold;
+}
+.CV_tel_update{
+    color:#2E2E2E;
+    font-size: 16px;
+    position:absolute;
+    top: 108px;
+    left: 10px;
+    font-weight: bold;
+}
+.CV_about_update{
+    color:#F02424;
+    font-size: 16px;
+    position:absolute;
+    top: 148px;
+    left: 10px;
+    font-weight: bold;
+}
+.CV_text_update{
+    color:#2E2E2E;
+    font-size: 16px;
+    position:absolute;
+    top: 168px;
+    left: 10px;
+    font-weight: bold;
+}
+
+

@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="style/style.css">
     <script defer src="https://kit.fontawesome.com/e8c0f84797.js" crossorigin="anonymous"></script>
     <script defer src="js/validation2.js"></script>
-    <script defer src="js/update2.js"></script>
+    
     <script defer src="js/takeoutinfo.js"></script>
+    <script defer src="js/update2.js"></script>
+    <script defer src="js/saveinfo2.js"></script>
     <title>Redberry</title>
 </head>
 <body>
@@ -48,28 +50,28 @@
         <p class="date_2_update" id="date_2_update"></p>
         <p class="agwera_update" id="agwera_update"></p>
     </div>
-    <form class="piradi_form" action="#" method="get" autocomplete="on">
+    <form class="piradi_form1" action="CV.html" method="get" autocomplete="on">
         <label id="label_tanamdeboba" for="tanamdeboba" class="label_tanamdeboba">თანამდებობა</label>
-        <input  type="text" class="tanamdeboba" id="tanamdeboba"   >
+        <input  type="text" name="tanamdeboba" class="tanamdeboba" id="tanamdeboba"   >
         <p class="tan_c_p"><i class="fa-solid fa-circle-check tan_c"></i></p>
         <p class="tan_x_p"><i class="fa-solid fa-circle-xmark tan_x"></i></p>
         <p class="firstname_p aso_2">მინიმუმ 2 ასო, ქართული ასოები</p>
 
         <label id="label_damsaqmebeli" for="damsaqmebeli" class="label_damsaqmebeli">დამსაქმებელი</label>
-        <input  type="text" class="damsaqmebeli" id="damsaqmebeli" >
+        <input  type="text" name="damsaqmebeli" class="damsaqmebeli" id="damsaqmebeli" >
         <p class="dam_c_p"><i class="fa-solid fa-circle-check dam_c"></i></p>
         <p class="dam_x_p"><i class="fa-solid fa-circle-xmark dam_x"></i></p>
         <p class="firstname_p aso_2_damsaqmebeli">მინიმუმ 2 ასო, ქართული ასოები</p>
 
         <label for="date_1" class="label_date_1">დაწყების რიცხვი</label>
-        <input type="date" name="date" class="date_1" id="date_1" placeholder="dd.mm.yyyy" required >
+        <input type="date" name="date_1" class="date_1" id="date_1" placeholder="dd.mm.yyyy" required >
         
         <label for="date_2" class="label_date_2">დამთავრების რიცხვი</label>
-        <input type="date" name="date" class="date_2" id="date_2" placeholder="dd.mm.yyyy" required>
+        <input type="date" name="date_2" class="date_2" id="date_2" placeholder="dd.mm.yyyy" required>
         
     
         <label class="label_agwera" for="agwera">აღწერა</label>
-        <textarea  id="agwera" class="agwera" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
+        <textarea  id="agwera" name="agwera" class="agwera" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა"></textarea>
         
         
         
@@ -79,18 +81,7 @@
         <p type="submit" value="წინა" class="gamocdileba_prev prev"><a class="gamocdileba_prev_a" href="piradi.html">წინა </a></p> 
      
      </form>
-     <script>
-       let formForLocal2 = document.querySelector(".piradi_form");
-       formForLocal2.addEventListener("submit", (g)=>{
-        g.preventDefault();
-        let cp = new FormData(formForLocal2);
-        let obj1 = Object.fromEntries(cp);
-        let json1 = JSON.stringify(obj1);
-        localStorage.setItem(".piradi_form", json1);
-        console.log(json1);
-        window.location.href = "gamocdileba.html";
-       })
-     </script>
+     
 </main>
 
 <footer></footer>
