@@ -591,29 +591,36 @@ body{
     color:#2E2E2E;
     font-size: 16px;
     position:absolute;
-    top: 300px;
+    top: 340px;
     left: 10px;
     font-weight: bold;
 }
-/* .damsaqmebeli_update{
+.damsaqmebeli_update{
     position: absolute;
     font-size: 16px;
     color: #2E2E2E;
-    top: 340px;
+    top: 380px;
     left: 10px;
-} */
+}
 .date_1_update{
     position: absolute;
     font-size: 16px;
     color: #2E2E2E;
-    top: 340px;
+    top: 420px;
+    left: 10px;
+}
+.date_2_update{
+    position: absolute;
+    font-size: 16px;
+    color: #2E2E2E;
+    top: 460px;
     left: 10px;
 }
 .agwera_line{
     position: absolute;
     font-size: 16px;
     color: #F02424;
-    top: 380px;
+    top: 500px;
     left: 10px;
     font-weight: bold;
 }
@@ -621,8 +628,9 @@ body{
     position: absolute;
     font-size: 16px;
     color: #2E2E2E;
-    top: 400px;
+    top: 520px;
     left: 10px;
+    width: 50%;
 }
 .piradi_div_5{
     position: fixed;
@@ -671,6 +679,7 @@ body{
     top: 168px;
     left: 10px;
     font-weight: bold;
+    width: 300px;
 }
 .image_CV{
     position: absolute;
@@ -680,6 +689,31 @@ body{
     top: 20px;
     right: 20px;
     /* background-size: 100%; */
+}
+.image_preview{
+    position: absolute;
+    width:200px;
+    height: 300px;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+}
+.piradi_div_33{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    width:40%;
+    height: 100%;
+    /* border: #ffffff solid 1px; */
+    right:0;
+    top: 0;
+}
+.image_preview_2{
+    position: absolute;
+    width:200px;
+    height: 300px;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
 }
 
 

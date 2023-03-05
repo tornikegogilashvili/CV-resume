@@ -1,4 +1,9 @@
-const json = localStorage.getItem("piradi_form");
+        const json3 = localStorage.getItem("recent-image");
+        console.log(json3);
+        let image_preview = document.querySelector(".image_preview_2");
+                
+        
+        const json = localStorage.getItem("piradi_form");
         const obj = JSON.parse(json);
         console.log(json);
         console.log(obj);
@@ -7,6 +12,7 @@ const json = localStorage.getItem("piradi_form");
             
             <p class="CV_lastname_update" id="CV_lastname_update">${obj.firstname+" "+obj.lastname}</p>
             <div class="piradi_div_img" id="piradi_div_img"></div>
+            <img class="image_preview_2" id="image_preview_2" src="${json3}" alt="image_preview_2">
             <p class="CV_email_update" id="CV_email_update">email: ${obj.email}</p>
             <p class="CV_tel_update" id="CV_tel_update">tel: ${obj.mobile}</p>
             <p class="CV_about_update" id="CV_about_update">ჩემ შესახებ</p>
