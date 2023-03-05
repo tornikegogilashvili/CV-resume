@@ -36,7 +36,8 @@
         <div class="piradi_div_3">
             <p class="CV_name CV" id="CV_name"></p>
             <p class="CV_lastname CV" id="CV_lastname"></p>
-            <div class="piradi_div_img" id="piradi_div_img"></div>
+            <!-- <div class="piradi_div_img" id="piradi_div_img"></div> -->
+            <img id="image_CV" class="image_CV" src="" alt="">
             <p class="CV_email" id="CV_email"></p>
             <p class="CV_tel" id="CV_tel"></p>
             <p class="CV_about" id="CV_about"></p>
@@ -68,17 +69,27 @@
             
         
         
-           <input type="submit" value="შემდეგი" class="piradi_next next"></input> 
+           <input type="submit" value="შემდეგი" class="piradi_next next" id="btn"></input> 
         
         </form>
         <script>
-            document.querySelector("#img").addEventListener("change", function(){
-                const reader = new FileReader();
-                reader.addEventListener("load", ()=>{
-                    console.log(reader.result);
-                })
-                reader.readAsDataURL(this.files[0]);
+            const fileEl = document.getElementById("img");
+            const btn = document.getElementById("btn");
+            btn.addEventListener("click", ()=>{
+                window.location.href = "gamocdileba.html";
+
             })
+            fileEl.addEventListener("change", ()=>{
+                const fr = new FileReader();
+                fr.readAsDataURL(fileEl.files[0]);
+                fr.addEventListener("load", ()=>{
+                    const url = fr.result;
+                    const img = new Image();
+                    img.src = url;
+                    let child = document.querySelector("#image_CV");
+                    child.src=url;
+                });
+            });
         </script>
     </main>
     <footer></footer>

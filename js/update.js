@@ -47,13 +47,13 @@
         }
     })
     // -----ფოტოს აფდეით----
-    const img = document.querySelector("#img");
-    let upload_image = "";
-    img.addEventListener("change", function(){
-        const reader = new FileReader();
-        reader.addEventListener("load", ()=>{
-            upload_image=reader.result;
-            document.querySelector("#piradi_div_img").style.backgroundImage=`url(${upload_image})`
-        });
-        reader.readAsDataURL(this.files[0]);
-    })
+    // const img = document.querySelector("#img");
+    // let upload_image = "";
+    // img.addEventListener("change", function(){
+    //     const reader = new FileReader();
+    //     reader.addEventListener("load", ()=>{
+    //         upload_image=reader.result;
+    //         document.querySelector("#piradi_div_img").style.backgroundImage=`url(${upload_image})`
+    //     });
+    //     reader.readAsDataURL(this.files[0]);
+    // })

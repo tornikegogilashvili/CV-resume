@@ -672,5 +672,14 @@ body{
     left: 10px;
     font-weight: bold;
 }
+.image_CV{
+    position: absolute;
+    width:200px;
+    height: 300px;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+    /* background-size: 100%; */
+}
 
 
