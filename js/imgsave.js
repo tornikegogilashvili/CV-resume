@@ -6,6 +6,8 @@
                 fr.readAsDataURL(fileEl.files[0]);
                 fr.addEventListener("load", ()=>{
                     const url = fr.result;
+                    localStorage.setItem("recent-image", url);
+                    
                     const img = new Image();
                     img.src = url;
                     let child = document.querySelector(".image_CV");
