@@ -30,6 +30,11 @@ fileEl.addEventListener("change", function () {
     wamkitxveli.readAsDataURL(this.files[0]);
     
 });
+    
+
+const json5 = localStorage.getItem("recent-image");
+console.log(json5);
+document.querySelector(".image_CV").setAttribute("src", json5)
 
 // document.addEventListener("DOMContentLoaded", () => {
 //     const recentImageDataUrl = localStorage.getItem("recent-image");
