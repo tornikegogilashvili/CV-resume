@@ -31,10 +31,10 @@ fileEl.addEventListener("change", function () {
     
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const recentImageDataUrl = localStorage.getItem("recent-image");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const recentImageDataUrl = localStorage.getItem("recent-image");
     
-        document.querySelector(".image_CV").setAttribute("src", recentImageDataUrl)
+//         document.querySelector(".image_CV").setAttribute("src", recentImageDataUrl)
     
-})
+// })
             
