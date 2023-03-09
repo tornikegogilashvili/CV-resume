@@ -6,7 +6,7 @@
                 fr.readAsDataURL(fileEl.files[0]);
                 fr.addEventListener("load", ()=>{
                     const url = fr.result;
-                    localStorage.setItem("recent-image", url);
+                    localStorage.setItem("my-image", url);
                     
                     const img = new Image();
                     img.src = url;
