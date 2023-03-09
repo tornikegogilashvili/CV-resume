@@ -1,4 +1,4 @@
-const json3 = localStorage.getItem("recent-image");
+const json3 = localStorage.getItem("my-image");
 console.log(json3);
 let image_preview = document.querySelector(".image_preview");
 // image_preview.src=toString(json3);
