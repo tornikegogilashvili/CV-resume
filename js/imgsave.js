@@ -1,24 +1,79 @@
-            const fileEl = document.querySelector(".img");
-            const btn = document.querySelector(".piradi_next");
+const fileEl = document.querySelector(".img");
+const btn = document.querySelector(".piradi_next");
+const previewEl = document.querySelector(".image_CV");
+
+fileEl.addEventListener("change", () => {
+  const fr = new FileReader();
+  fr.readAsDataURL(fileEl.files[0]);
+  
+  fr.addEventListener("load", () => {
+    const url = fr.result;
+    localStorage.setItem("my-image", url);
+    previewEl.src = url;
+  });
+});
+
+btn.addEventListener("click", () => {
+  window.location.href = "gamocdileba.html";
+});
+
+
+// const url = localStorage.getItem("my-image");
+// if (url) {
+//   previewEl.src = url;
+// }
+
+
+
+
+
+
+
+
+
+
+// const fileEl = document.querySelector(".img");
+// var uploaded_image = "";
+// fileEl.addEventListener("change", function(){
+//     const reader = new FileReader();
+
+//     reader.addEventListener("load", () => {
+//         localStorage.setItem("image", reader.result);
+        
+//     });
+//     reader.readAsDataURL(this.files[0]);
+//     const recentImageDataUrl = localStorage.getItem("image");
+    
+    
+//     console.log(recentImageDataUrl);
+//     document.querySelector(".image_CV").src=recentImageDataUrl;
+// });
+
             
-            fileEl.addEventListener("change", ()=>{
-                const fr = new FileReader();
-                fr.readAsDataURL(fileEl.files[0]);
-                fr.addEventListener("load", ()=>{
-                    const url = fr.result;
-                    localStorage.setItem("my-image", url);
+            
+            
+            
+            // const fileEl = document.querySelector(".img");
+            // const btn = document.querySelector(".piradi_next");
+            
+            // fileEl.addEventListener("change", ()=>{
+            //     const fr = new FileReader();
+            //     fr.readAsDataURL(fileEl.files[0]);
+            //     fr.addEventListener("load", ()=>{
+            //         const url = fr.result;
+            //         localStorage.setItem("my-image", url);
                     
-                    const img = new Image();
-                    img.src = url;
-                    let child = document.querySelector(".image_CV");
-                    child.src=url;
-                });
-            });
+            //         const img = new Image();
+            //         img.src = url;
+            //         let child = document.querySelector(".image_CV");
+            //         child.src=url;
+            //     });
+            // });
 
-            btn.addEventListener("click", ()=>{
-                            window.location.href = "gamocdileba.html";
+            // btn.addEventListener("click", ()=>{
+            //                 window.location.href = "gamocdileba.html";
 
-                        })
+            //             })
 
 
 // const fileEl = document.querySelector(".img");

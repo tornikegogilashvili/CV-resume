@@ -717,3 +717,138 @@ body{
 }
 
 
+
+/* ----------------------------------------------------------
+---------------iphone 13 pro resolution ------------------
+---------------------------------------------------------- */
+@media only screen and (max-width: 400px) {
+    .redberry_logo{
+        margin:25px 30vw;
+    }
+    .line-div {
+        width: auto;
+        top: 89px;
+        left: 30vw;
+        right: 10vw;
+        border: 1px solid #000000;
+        position: absolute;
+    }
+    .home_p a{
+        left: 50%;
+        transform: translate(-35%);
+    }
+
+    /* --------piradi.html----- */
+    .fa-chevron-left-a {
+        margin: 10px 0 0 10px;
+        
+    }
+    .piradi_piradiInfo {
+        position: absolute;
+        color: #1A1A1A;
+        font-weight: 700;
+        font-size: 24px;
+        top: 10px;
+        left: 50px;
+        /* display: flex; */
+    }
+    .piradi_div_2 {
+        position: unset;
+        background-color: #e7e7e7;
+        width: unset;
+        margin: unset;
+    }
+    .piradi_line {
+        width: auto;
+        border: #000000 solid 1px;
+        margin: unset;
+        margin: 0 30px 0 50px;
+    }
+    .pages1_3 {
+        position: absolute;
+        top: 20px;
+        left: unset;
+        right: 30px;
+    }
+    .piradi_div_3 {
+        display: none;
+    }
+    .label_firstname {
+        position: absolute;
+        /* margin: 60px 0 0 50px; */
+        top: 50px;
+        left: 50px;
+    }
+    .firstname {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 320px;
+}
+.firstname_p {
+    position: absolute;
+    font-size: 14px;
+    color: #2E2E2E;
+    top: 150px;
+    left: 50px;
+    width: 250px;
+}
+.label_lastname {
+    position: absolute;
+    top: 190px;
+    right: unset;
+    left: 50px;
+}
+.lastname {
+    position: absolute;
+    right: unset;
+    left: 50px;
+    top: 230px;
+    width: 320px;    
+}
+.lastname_p {
+    position: absolute;
+    top: 290px;
+    left: 50px;
+    right: unset;
+}
+.label_file {
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    width: 100%;
+}
+.img {
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    top: 380px;
+    left: 50px;
+    right: unset;
+}
+.label_textarea {
+    position: absolute;
+    left: 50px;
+    top: 450px;
+    width: 100%;
+}
+.textarea {
+    position: absolute;
+    left: 50px;
+    right: unset;
+    top: 480px;
+    width: 320px;
+}
+.label_email {
+    position: absolute;
+    top: 478px;
+    left: 150px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+}
+
+
+
