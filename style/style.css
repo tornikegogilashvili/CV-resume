@@ -842,10 +842,197 @@ body{
 }
 .label_email {
     position: absolute;
-    top: 478px;
-    left: 150px;
-    font-size: 18px;
-    font-weight: 500;
+    top: 600px;
+    left: 50px;
+}
+.email {
+    position: absolute;
+    left: 50px;
+    right: unset;
+    top: 630px;
+    width: 320px;
+    
+}
+.email_p {
+    position: absolute;
+    font-size: 14px;
+    color: #2E2E2E;
+    top: 680px;
+    left: 50px;
+}
+.label_number {
+    position: absolute;
+    top: 740px;
+    left: 50px;
+}
+.number {
+    position: absolute;
+    left: 50px;
+    right: unset;
+    top: 770px;
+    width: 320px;
+}
+.number_p {
+    position: absolute;
+    font-size: 14px;
+    color: #2E2E2E;
+    top: 820px;
+    left: 50px;
+    width: 320px;
+}
+.next {
+    position: absolute;
+    top: 880px;
+    left: 285px;
+    right: unset;
+    
+}
+/* --------gamocdileba.html------- */
+.label_tanamdeboba {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.tanamdeboba {
+    position: absolute;
+    left: 50px;
+    right: uns;
+    top: 80px;
+    width: 320px;
+    
+}
+.aso_2 {
+    position: absolute;
+    font-size: 14px;
+    color: #2E2E2E;
+    top: 150px;
+    left: 50px;
+    width: 320px;
+}
+.label_damsaqmebeli {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.damsaqmebeli {
+    position: absolute;
+    left: 50px;
+    right: unset;
+    top: 230px;
+    width: 320px;
+}
+.aso_2_damsaqmebeli {
+    position: absolute;
+    font-size: 14px;
+    color: #2E2E2E;
+    top: 300px;
+    left: 50px;
+    width: 320px;
+}
+.label_date_1 {
+    position: absolute;
+    width: 320px;
+    top: 340px;
+    left: 50px;
+}
+.date_1 {
+    position: absolute;
+    top: 370px;
+    left: 50px;
+    width: 320px;
+}
+.label_date_2 {
+    position: absolute;
+    width: 320px;
+    top: 440px;
+    right: unset;
+    left: 50px;
+}
+.date_2 {
+    position: absolute;
+    right: unset;
+    left: 50px;
+    top: 480px;
+    width: 320px;
+}
+.label_agwera {
+    position: absolute;
+    left: 50px;
+    top: 540px;
+}
+.agwera {
+    position: absolute;
+    left: 50px;
+    right: unset;
+    top: 580px;
+    width: 320px;
+    height: 100px;
+    
+}
+.gamocdileba_next {
+    position: absolute;
+    top: 740px;
+    left: 285px;
+    right: unset;
+}
+.gamocdileba_prev_a {
+    position: absolute;
+    background-color: #6B40E3;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    top: 740px;
+    left: 50px;
+    cursor: pointer;
+}
+.piradi_div_5 {
+    position: fixed;
+    background-color: #dbdbdb;
+    width: 100%;
+    height: 100%;
+    /* border: #ffffff solid 1px; */
+}
+.image_preview_2 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    top: 150px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.CV_lastname_update {
+    top: 330px;
+}
+.CV_email_update {
+    top: 380px;
+}
+.CV_tel_update {
+    top: 420px;
+}
+.CV_about_update {
+    top: 460px;
+}
+.CV_text_update {
+    top: 490px;
+    width: 95%;
+}
+.tanamdeboba_update {
+    top: 650px;
+}
+.date_1_update {
+    top: 680px;
+}
+.agwera_line {
+    top: 720px;
+}
+.agwera_update {
+    top: 750px;
+    width: 95%;
+}
+.piradi_div_4 {
+    display: none;
 }
 
 }
